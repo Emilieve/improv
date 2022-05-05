@@ -2,7 +2,7 @@
     <?php if(is_front_page()) : ?>
         <section class="container">
                 <div id="instagram_feed">
-                    <?php echo do_shortcode('[instagram feed="1516"]'); ?>
+                    <?php echo do_shortcode('[instagram feed="1574"]'); ?>
                 </div>
         </section>
     <?php endif; ?>
