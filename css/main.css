@@ -699,6 +699,7 @@ body main section.boardmembers article.boardmember > div{
 }
 .imagelightbox-arrow-right:before{
   margin-left: auto!important;
+  
 }
 .imagelightbox-arrow-left:before{
   margin-right: auto!important; 
@@ -716,6 +717,28 @@ body main section.boardmembers article.boardmember > div{
   flex-wrap: nowrap;
   justify-content: space-evenly;
 }
+@media only screen and (max-width: 41.25em){ .imagelightbox-arrow-right {    
+  right: 1.25em!important;
+}
+.imagelightbox-arrow:before{
+  border: 0.5em solid transparent!important;
+}
+.imagelightbox-arrow {
+  width: 2.5em!important;
+  height: 2.5em!important;
+}
+@media only screen and (max-width: 41.25em){ .imagelightbox-arrow-right {    
+  right: 1.25em!important;
+}
+.imagelightbox-arrow:before{
+  border: 0.5em solid transparent!important;
+}
+.imagelightbox-arrow {
+  width: 2.5em!important;
+  height: 2.5em!important;
+}
+
+
 
 
 @media (max-width: 768px) {
