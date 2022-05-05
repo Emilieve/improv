@@ -697,17 +697,7 @@ body main section.boardmembers article.boardmember > div{
   margin: auto!important;
   margin-bottom: auto!important; 
 }
-.imagelightbox-arrow-right:before{
-  margin-left: auto!important;
-  border-right: none!important;
-  border-left-color: #fff!important;
-  
-}
-.imagelightbox-arrow-left:before{
-  margin-right: auto!important; 
-  border-left: none!important;
-  border-right-color: #fff!important;
-}
+
 .imagelightbox-arrow{
   width: 4em;
   height: 4em;
@@ -742,7 +732,17 @@ body main section.boardmembers article.boardmember > div{
   height: 2.5em!important;
 }
 
-
+.imagelightbox-arrow-right:before{
+  margin-left: auto!important;
+  border-right: none!important;
+  border-left-color: #fff!important;
+  
+}
+.imagelightbox-arrow-left:before{
+  margin-right: auto!important; 
+  border-left: none!important;
+  border-right-color: #fff!important;
+}
 
 
 
