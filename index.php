@@ -40,6 +40,11 @@ if (have_posts()) {
             <?php dynamic_sidebar('board-members'); ?>
         </section>
         <?php the_content(); ?>
+    <?php elseif(is_page(array('commissies','committees'))) : ?>
+        <section class="committees">
+            <?php dynamic_sidebar('committees-page'); ?>
+        </section>
+        <?php the_content(); ?>
     <?php elseif(is_page(array('fotos','photos','fotodetails','photodetails'))) : ?>
         <h2><?php echo (is_single() || is_singular() || is_page() ? get_the_title() : '<a href="'.get_the_permalink().'">'.get_the_title().'</a>'); ?></h2>
         <?php the_content(); ?>

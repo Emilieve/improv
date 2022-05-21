@@ -345,6 +345,59 @@ body main section.boardmembers article.boardmember > div img {
   border: 3px solid white;
   box-shadow: 0 2px 2px rgba(123, 20, 25, 0.5);
 }
+
+body main section.committees {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+body main section.committees article.committee {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  border-radius: 3px;
+  width: 23%;
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+body main section.committees article.committee > h3 {
+  flex: 0;
+  font-size: 1.25rem;
+  text-align: center;
+  padding: 30px 0;
+  height: 5rem;
+}
+body main section.committees article.committee > div {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  padding: 15px;
+  background-color: #CC202D;
+  margin-top: 60px;
+}
+body main section.committees article.committee > div, body main section.committees article.committee > div a {
+  color: white;
+}
+body main section.committees article.committee > div > p {
+  text-align: center;
+}
+body main section.committees article.committee > div img {
+  width: 60%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 100%;
+  margin-top: -60px;
+  border: 3px solid white;
+  box-shadow: 0 2px 2px rgba(123, 20, 25, 0.5);
+}
+
+
+
+
+
+
 body #instagram_feed .instagram_gallery {
   display: flex;
 }
@@ -628,6 +681,15 @@ margin-bottom: 3rem;
   font-size: 150%;
   color: #F0B8A6;
 }
+
+.committee-member-name{
+  font-family: "Berlin sans fb", sans-serif;
+  font-weight: 400;
+  font-size: 150%;
+  color: white;
+}
+
+
 body main section.boardmembers article.boardmember > h3{
   font-size: 2rem;
   padding: 20px 0;
@@ -635,6 +697,19 @@ body main section.boardmembers article.boardmember > h3{
 body main section.boardmembers article.boardmember > div{
   border-radius: 3px;
 }
+
+
+
+body main section.committees article.committee > h3{
+  font-size: 2rem;
+  padding: 20px 0;
+}
+body main section.committees article.committee > div{
+  border-radius: 3px;
+}
+
+
+
 .button-boardmember-contact {
   display: inline-block;
   width: 100%;
@@ -743,6 +818,143 @@ body main section.boardmembers article.boardmember > div{
   border-left: none!important;
   border-right-color: #fff!important;
 }
+}
+}
+
+
+
+/*the event calender*/
+.tribe-common h2, .tribe-common h3{
+background-image: none;
+background-color: transparent;
+}
+
+.tribe-common h3{
+  font-family: 'Barlow';
+}
+
+.tribe-common header{
+  background-color: transparent;
+  background-image: none;
+}
+.tribe-common div{
+background-color: transparent;
+background-image: none;
+}
+
+.tribe-common time{
+  color: #F0B8A6;
+}
+
+.tribe-events-widget .tribe-events-widget-events-list__event-row{
+background-color: #a01426;
+background-image: none;
+border-radius: 6px;
+}
+
+.tribe-events-widget-events-list__event-date-tag-daynum.tribe-common-h2.tribe-common-h4--min-medium{
+  color: white;
+  font-size: 2rem;
+}
+
+.tribe-events-widget-events-list__event-date-tag-datetime{
+color: white;
+font-family: 'Berlin Sans FB';
+font-size: 2rem;
+}
+
+.tribe-events-widget .tribe-events-widget-events-list__header {
+  background-image: none;
+background-color: transparent;
+}
+
+.tribe-events-widget-events-list__events{
+background-color: transparent;
+background-image: none;
+}
+
+.tribe-events-widget-events-list__event-date-tag-month {
+  color: white;
+}
+.tribe-event-date-start, .tribe-event-time{
+  font-weight: 800;
+    font-family: 'Barlow';
+}
+
+.tribe-events-widget-events-list__event-header.sticky{
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding-left: 3rem;
+}
+header.tribe-events-widget-events-list__event-header {
+  display: flex!important;
+  flex-direction: column-reverse;
+  align-items: center;
+  padding-left: 3rem!important;
+}
+
+.tribe-events-widget-events-list__event-title.tribe-common-h7{
+margin-top: 17px;
+margin-right: auto;
+}
+
+.tribe-events-widget-events-list__event-datetime-wrapper.tribe-common-b2.tribe-common-b3--min-medium{
+  margin-right: auto;
+}
+.tribe-events-schedule.tribe-clearfix{
+  color: #F0B8A6;
+}
+.button-ticket {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 9px;
+  text-align: center;
+  text-decoration: none;
+  color: white!important;
+  border-radius: 15px;
+  /* border: 3px solid white; */
+  border: 3px solid rgba(0, 0, 0, 0.0);
+  outline: none;
+  background-blend-mode: saturation;
+  font-family: "Berlin sans fb", sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  margin-top: auto;
+  background-color: #a01426;
+}
+.button-ticket:hover{
+  background-color: rgba(0, 0, 0, 0.0);
+  border: 3px solid white;
+}
+
+
+
+  @media screen and (min-width: 1200px) {
+    .button-ticket {
+      width: 30%;
+    }
+  }
+
+
+
+main#tribe-events-pg-template {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: #CC202D;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 50%);
+  padding: 15px;
+  margin: 30px 15px 2rem;
+  transition: background-color 0.2s;
+}
+
+/*relavansi search results styling*/
+.relevanssi-live-search-result a {
+  color: black!important;
+}
+
+
+
 
 
 
@@ -803,13 +1015,14 @@ body main section.boardmembers article.boardmember > div{
     font-size: 1rem;
   }
 }
+
+
+
 @media screen and (min-width: 320px) {
   section.boardmembers article.boardmember {
-
     flex: 0 100%;
   }
 }
-
 
 @media screen and (min-width: 768px) {
   section.boardmembers article.boardmember {
@@ -821,5 +1034,26 @@ body main section.boardmembers article.boardmember > div{
     flex: 0 24%;
   }
 }
+
+@media screen and (min-width: 320px) {
+  section.committees article.committee {
+
+    flex: 0 100%;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  section.committees article.committee {
+    flex: 0 45%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section.committees article.committee {
+    flex: 0 24%;
+  }
+}
+
+
 
 /*# sourceMappingURL=main.css.map */

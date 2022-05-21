@@ -118,6 +118,14 @@ function register_improv_sidebars() {
         'after_title'   => '</h3>',
     ));
     register_sidebar( array(
+        'name'          => __('committees', 'improv'),
+        'id'            => 'committees-page',
+        'before_widget' => '<article class="committee">',
+        'after_widget'  => '</article>',
+        'before_title'  => '<h3>',
+        'after_title'   => '</h3>',
+    ));
+    register_sidebar( array(
         'name'          => __('Documents', 'improv'),
         'id'            => 'documents',
         'before_widget' => '<article class="document">',
@@ -250,6 +258,9 @@ function add_cpt_services() {
     );
 }
 add_action( 'init', 'add_cpt_services' );
+
+add_filter( 'tec_views_v2_subscribe_link_gcal_visibility', '__return_false', 10 );
+add_filter( 'tec_views_v2_subscribe_link_ical_visibility', '__return_false', 10 );
 
 include_once('func_caps.php');
 include_once('func_comments.php');
