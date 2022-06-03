@@ -94,7 +94,6 @@ $title = apply_filters( 'tribe_events_single_event_title_html', the_title( $befo
 				<?php the_content(); ?>
 			</div>
 			<!-- .tribe-events-single-event-description -->
-			<?php do_action( 'tribe_events_single_event_after_the_content' ) ?>
 
 			<!-- Event meta -->
 			<?php do_action( 'tribe_events_single_event_before_the_meta' ) ?>
